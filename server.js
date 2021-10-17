@@ -27,7 +27,7 @@ const filterByQuery = (query, notesArray) => {
 }
 
 const getNote = (body, notesArray) => {
-  const note = body;
+  let note = body;
   notesArray.push(note)
   fs.writeFileSync(
     path.join(__dirname, './db/db.json'),
@@ -37,7 +37,7 @@ const getNote = (body, notesArray) => {
 }
 
 const validateNote = note => {
-  if(!note.name || typeof note.name !== 'string') {
+  if(!note.title || typeof note.title !== 'string') {
     return false
   }
   if(!note.text || typeof note.text !== 'string') {
@@ -47,12 +47,16 @@ const validateNote = note => {
 }
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'notes.html'))
+  res.sendFile(path.join(__dirname, './public/notes.html'))
 })
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 /*Function takes in req.query as an argument and filters through the notes accordingly
 returning the new filtered array*/
