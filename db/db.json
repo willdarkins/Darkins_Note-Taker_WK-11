@@ -1,16 +1,26 @@
 {
-"notes":[
+  "notes": [
     {
-        "title":"Breakfast",
-        "text":"Eat and enjoy!"
+      "title": "Breakfast",
+      "text": "Eat and enjoy!"
     },
     {
-        "title":"Lunch",
-        "text":"Eat ASAP and get back to work!"
+      "title": "Lunch",
+      "text": "Eat ASAP and get back to work!"
     },
     {
-        "title":"Dinner",
-        "text":"Enjoy your food, Brah!"
+      "title": "Dinner",
+      "text": "Enjoy your food, Brah!"
+    },
+    {
+      "title": "Snack",
+      "text": "Grab something quick and delicious",
+      "id": "e0aedc3b-04a3-4ec8-9519-c5867d7d21df"
+    },
+    {
+      "title": "Cuddles",
+      "text": "Have cuddle time with mah beerrrrb",
+      "id": "1fa5573e-5b08-4bca-889d-724a7132b32d"
     }
-]
+  ]
 }
