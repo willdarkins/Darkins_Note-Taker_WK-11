@@ -1,8 +1,16 @@
 {
 "notes":[
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title":"Breakfast",
+        "text":"Eat and enjoy!"
+    },
+    {
+        "title":"Lunch",
+        "text":"Eat ASAP and get back to work!"
+    },
+    {
+        "title":"Dinner",
+        "text":"Enjoy your food, Brah!"
     }
 ]
 }
