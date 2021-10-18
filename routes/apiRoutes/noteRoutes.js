@@ -27,4 +27,38 @@ const { v4: uuidv4 } = require('uuid');
     }
   });
 
+  router.delete("/api/notes/:id", (req, res) => {
+    let deletedNote = req.params.id;
+    fs.readFile(__dirname + "/db/db.json", (err, data) => {
+        if (err) {
+            console.log(err);
+            res.sendStatus(500);
+            return;
+        }
+        try {
+            let json = JSON.parse(data);
+        } catch(e) {
+            console.log(err);
+            res.sendStatus(500);
+            return;
+        }
+  
+        for (let i = 0; i < json.length; i++) {
+            if (json[i].id === deletedNote) {
+                json.splice(i, 1);
+                return;
+            }
+        }
+  
+        fs.writeFile(__dirname + "/db/db.json", JSON.stringify(json), (err) => {
+            if (err) {
+                console.log(err);
+                res.sendStatus(500);
+                return;
+            }
+            res.send("Successfully deleted");
+        });
+    });
+  });
+
   module.exports  = router;
