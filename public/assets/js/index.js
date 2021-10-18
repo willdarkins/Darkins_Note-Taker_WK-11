@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -15,7 +13,7 @@ if (window.location.pathname === '/notes') {
 }
 
 // Show an element
-const show = elem => {
+const show = (elem) => {
   elem.style.display = 'inline';
 };
 
@@ -39,7 +37,6 @@ const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
     headers: {
-      Accept: 'application/json',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
