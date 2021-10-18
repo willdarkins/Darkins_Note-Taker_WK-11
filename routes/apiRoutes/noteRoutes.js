@@ -27,26 +27,4 @@ const { v4: uuidv4 } = require('uuid');
     }
   });
 
-
-  router.delete('/notes/:id', (req, res) => {
-    const notesIndex = getIndexById(req.params.id, notes);
-    if (notesIndex !== -1) {
-      notes.splice(notesIndex, 1);
-      res.status(204).send();
-    } else {
-      res.status(404).send();
-    }
-  });
-
-  // router.delete('/notes/:id', (req, res) => {
-  //   let query = {_id: req.params.id}
-
-  //   notes.remove(query, function(err) {
-  //     if(err) {
-  //       console.log(err);
-  //     }
-  //     res.send('Success!')
-  //   })
-  // })
-
   module.exports  = router;
