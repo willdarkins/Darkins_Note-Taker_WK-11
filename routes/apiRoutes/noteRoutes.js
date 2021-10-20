@@ -1,10 +1,11 @@
+const router = require('express').Router();
+
 const fs = require("fs");
 const path = require("path");
-const router = require('express').Router();
+const { v4: uuidv4 } = require('uuid');
+
 const { filterByQuery, getNote, validateNote, getNoteId } = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
-
-const { v4: uuidv4 } = require('uuid');
 
 /*Function takes in req.query as an argument and filters through the notes accordingly
 returning the new filtered array*/
@@ -31,17 +32,16 @@ router.delete("/notes/:id", (req, res) => {
   const clickedCan = getNoteId(req.params.id, notes) 
   const index = notes.indexOf(clickedCan);
   if (index > -1) {
-    notes.splice(index, 1);
-    return notes;
+    notes.splice(index, 1)
+    fs.writeFile(
+      path.resolve(__dirname, "../../db/db.json"),
+      JSON.stringify({notes}),
+      function (error) {
+        if (error) console.error(error);
+        res.json(notes);
+      }
+    );
   }
-   fs.writeFile(
-     path.resolve(__dirname, "../db/db.json"),
-     JSON.stringify(notes),
-     function (error) {
-       if (error) console.error(error);
-       res.json(notes);
-     }
-   );
  });
 
 module.exports = router;
