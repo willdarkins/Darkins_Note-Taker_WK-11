@@ -1,9 +1,12 @@
+//Code allowing you to declare routes in any file as long as you use the proper middleware
 const router = require('express').Router();
 
+//NPM dependencies
 const fs = require("fs");
 const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 
+//Imported functions from lib directory and deconstructed notes array from db directory
 const { filterByQuery, getNote, validateNote, getNoteId } = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
 
@@ -28,20 +31,22 @@ router.post('/notes', (req, res) => {
   }
 });
 
+//DELETE route that uses getNoteId funtion as callback and passes req.params.id
 router.delete("/notes/:id", (req, res) => {
-  const clickedCan = getNoteId(req.params.id, notes) 
+  const clickedCan = getNoteId(req.params.id, notes)
   const index = notes.indexOf(clickedCan);
   if (index > -1) {
     notes.splice(index, 1)
     fs.writeFile(
       path.resolve(__dirname, "../../db/db.json"),
-      JSON.stringify({notes}, null, "\t "),
+      JSON.stringify({ notes }, null, "\t "),
       (error) => {
         if (error) console.error(error);
         res.json(notes);
       }
     );
   }
- });
+});
 
+//Export router
 module.exports = router;
