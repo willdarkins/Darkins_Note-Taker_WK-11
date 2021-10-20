@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const router = require('express').Router();
 const { filterByQuery, getNote, validateNote } = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
@@ -29,14 +28,16 @@ router.post('/notes', (req, res) => {
   }
 });
 
-router.delete('/api/notes/:id', (req, res) => {
-  let readId = req.params.id;
-  fs.readfile(path.join(__dirname, '../db/db.json'),
-    removeById = (id, notes) => {
-      const everyThingButId = notes.filter(note => note.id !== id)[0];
-      return everyThingButId;
-    }).then
-    (getNote(everyThingButId));
-})
+router.delete("/notes/:id", (req, res) => {
+  notes.splice(req.params.id, 1);
+  fs.writeFile(
+    path.resolve(__dirname, "../db/db.json"),
+    JSON.stringify(notesData),
+    function (error) {
+      if (error) console.error(error);
+      res.json(notesData);
+    }
+  );
+});
 
 module.exports = router;
