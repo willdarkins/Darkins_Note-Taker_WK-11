@@ -35,8 +35,8 @@ router.delete("/notes/:id", (req, res) => {
     notes.splice(index, 1)
     fs.writeFile(
       path.resolve(__dirname, "../../db/db.json"),
-      JSON.stringify({notes}),
-      function (error) {
+      JSON.stringify({notes}, null, "\t "),
+      (error) => {
         if (error) console.error(error);
         res.json(notes);
       }
