@@ -1,5 +1,14 @@
 {
   "notes": [
-
+    {
+      "title": "Note, Bro",
+      "text": "Here's a note",
+      "id": "e6624236-6c59-4fed-b2e1-93a14f5cbdd3"
+    },
+    {
+      "title": "One more note for you...",
+      "text": "It's a note!",
+      "id": "6297f11f-6972-4576-820f-ff993e59eabc"
+    }
   ]
 }

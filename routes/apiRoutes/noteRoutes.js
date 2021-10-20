@@ -32,6 +32,7 @@ router.delete("/notes/:id", (req, res) => {
   const index = notes.indexOf(clickedCan);
   if (index > -1) {
     notes.splice(index, 1);
+    return notes;
   }
    fs.writeFile(
      path.resolve(__dirname, "../db/db.json"),
