@@ -32,10 +32,10 @@ router.delete("/notes/:id", (req, res) => {
   notes.splice(req.params.id, 1);
   fs.writeFile(
     path.resolve(__dirname, "../db/db.json"),
-    JSON.stringify(notesData),
+    JSON.stringify(notes),
     function (error) {
       if (error) console.error(error);
-      res.json(notesData);
+      res.json(notes);
     }
   );
 });
