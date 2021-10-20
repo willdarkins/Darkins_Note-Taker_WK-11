@@ -1,14 +1,14 @@
 {
   "notes": [
     {
-      "title": "Breakfast",
-      "text": "Eat Breakfast, Bitch!",
-      "id": "cb84c901-6db7-4402-8b8d-973b942e5a31"
+      "title": "Test",
+      "text": "This is me testing the app...",
+      "id": "d0674c49-f310-4fda-ac1c-ce0d8a307973"
     },
     {
-      "title": "Lunch",
-      "text": "Poop out breakfast, bitch!",
-      "id": "6710e9ff-3dc7-46de-99c8-130f4f140a17"
+      "title": "Here's another test",
+      "text": "This is me writing....",
+      "id": "6965010f-f15b-412d-975f-a5abf8c5d3de"
     }
   ]
 }
