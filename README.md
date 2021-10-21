@@ -66,11 +66,11 @@ Below are screenshots that provide further reference:
 *These features make up the core tenets of this project:*
 <br>
 🌟 Two features stand out in this project:
-* NPM package UUID: For the creation of RFC4122 UUIDs
-* Heroku: Hosting application
+* <a href= https://drive.google.com/file/d/1kWJXsBkb-6evUWvA8DwLDwAIR7S1ma_y/view?usp target="_blank">NPM package UUID<a>: For the creation of RFC4122 UUIDs
+* <a href= https://www.heroku.com/ target="_blank">Heroku<a>: Hosting application
 
 ## Contributing
-👐 This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
+👐 This project adheres to standards set by the <a href = https://www.npmjs.com/package/uuid>Contributor Covenant</a>.<br>
 Please consult this documentation before contributing to this project.
 
 ## Questions
