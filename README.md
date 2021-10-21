@@ -2,7 +2,7 @@
 
 ## Description
 *The what, why, and how:*<br>
-❓ An application geared towards helping small business owners write and save digital notes. The functionalityallows users to better organize thoughts and keep track of daily tasks in a simple, easy to navigate UI.
+❓ An application geared towards helping small business owners write and save digital notes. The functionality allows users to better organize thoughts and keep track of daily tasks in a simple, easy to navigate UI.
 
 Please follow THIS LINK to view a working video tutorial of the application.
 
@@ -49,7 +49,7 @@ Below are screenshots that provide further reference:
 * Navigate back to your code editor and the `db.json` file to view your updates in real time.
 
 ### USER
-* Follow THIS LINK to the deployed application hosted by Heroku.
+* Follow <a href= https://agile-springs-22845.herokuapp.com/ target="_blank">THIS LINK</a> to the deployed application hosted by Heroku.
 * Refer to previous steps in Developer section to operate application
 
 ## Credits
