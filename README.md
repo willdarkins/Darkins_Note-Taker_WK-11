@@ -66,7 +66,7 @@ Below are screenshots that provide further reference:
 *These features make up the core tenets of this project:*
 <br>
 🌟 Two features stand out in this project:
-* <a href= https://drive.google.com/file/d/1kWJXsBkb-6evUWvA8DwLDwAIR7S1ma_y/view?usp target="_blank">NPM package UUID<a>: For the creation of RFC4122 UUIDs
+* <a href= https://www.npmjs.com/package/uuidp target="__blank">NPM package UUID<a>: For the creation of RFC4122 UUIDs
 * <a href= https://www.heroku.com/ target="_blank">Heroku<a>: Hosting application
 
 ## Contributing
