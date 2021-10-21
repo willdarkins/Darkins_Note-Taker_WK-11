@@ -4,7 +4,7 @@
 *The what, why, and how:*<br>
 ❓ An application geared towards helping small business owners write and save digital notes. The functionality allows users to better organize thoughts and keep track of daily tasks in a simple, easy to navigate UI.
 
-Please follow THIS LINK to view a working video tutorial of the application.
+Please follow <a href= https://drive.google.com/file/d/1CU8vvcb4qKrA2GJKg3s7sXUbgeh1yNpA/view?usp target="__blank">THIS LINK</a> to view a working video tutorial of the application.
 
 Below are screenshots that provide further reference:
 ![SCREENSHOT_1](https://user-images.githubusercontent.com/84754257/138191352-ad3448e4-2f49-4c9a-913b-e7628b193e64.JPG)
