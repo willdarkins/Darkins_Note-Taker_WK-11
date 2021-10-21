@@ -50,7 +50,7 @@ Below are screenshots that provide further reference:
 
 ### USER
 * Follow <a href= https://agile-springs-22845.herokuapp.com/ target="_blank">THIS LINK</a> to the deployed application hosted by Heroku.
-* Refer to previous steps in Developer section to operate application
+* Refer to previous steps in Developer section to operate application.
 
 ## Credits
 *A thank you to those who helped make this happen:*
