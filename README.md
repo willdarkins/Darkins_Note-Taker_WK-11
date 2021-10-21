@@ -75,6 +75,7 @@ Please consult this documentation before contributing to this project.
 
 ## Questions
 If you have any questions regarding the development process of this application, or specific questions about contributing, feel free to reach me by email or on Github.
+
 ![Profile Pic](https://user-images.githubusercontent.com/84754257/138190954-a5ae2c9d-bc4f-448e-ac43-91d15320cd13.jpg)
 
 * Email 📪 willdarkins@gmail.com
