@@ -7,6 +7,9 @@
 Please follow THIS LINK to view a working video tutorial of the application.
 
 Below are screenshots that provide further reference:
+![SCREENSHOT_1](https://user-images.githubusercontent.com/84754257/138191352-ad3448e4-2f49-4c9a-913b-e7628b193e64.JPG)
+![SCREENSHOT_2](https://user-images.githubusercontent.com/84754257/138191360-c05ca67b-48a6-4ba7-a9fc-6ac1fcd9908d.JPG)
+![SCREENSHOT_3](https://user-images.githubusercontent.com/84754257/138191365-94512328-73e5-490f-acc6-c9177a3e1623.JPG)
 
 ## Table of Contents
 
@@ -37,7 +40,7 @@ Below are screenshots that provide further reference:
 *Instructions and examples for use:*
 <br>
 🏁 There are two approaches to operating the application:
-- DEVELOPER
+### DEVELOPER
 * Open the project folder in your code editor and navigate to the `db.json` file. Then open your CLI and enter `NPM start` to fire up the `localhost:3001` server. A console log message should indicate this has happened.
 * On the home page, click the "Get Started" box to navigate to the notes page
 * Engage the "Note Title" and "Note Text" fields and enter your desired note.
@@ -45,7 +48,7 @@ Below are screenshots that provide further reference:
 * Click the red trash can icon corresponding to each saved note in order to delete note.
 * Navigate back to your code editor and the `db.json` file to view your updates in real time.
 
-- USER
+### USER
 * Follow THIS LINK to the deployed application hosted by Heroku.
 * Refer to previous steps in Developer section to operate application
 
@@ -63,14 +66,17 @@ Below are screenshots that provide further reference:
 *These features make up the core tenets of this project:*
 <br>
 🌟 Two features stand out in this project:
-* NPM package UUID: For the creation of RFC4122 UUIDs
-* Heroku: Hosting application
+* <a href= https://drive.google.com/file/d/1kWJXsBkb-6evUWvA8DwLDwAIR7S1ma_y/view?usp target="_blank">NPM package UUID<a>: For the creation of RFC4122 UUIDs
+* <a href= https://www.heroku.com/ target="_blank">Heroku<a>: Hosting application
 
 ## Contributing
-👐 This project adheres to standards set by the <a href = https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md>Contributor Covenant</a>.<br>
+👐 This project adheres to standards set by the <a href = https://www.npmjs.com/package/uuid>Contributor Covenant</a>.<br>
 Please consult this documentation before contributing to this project.
 
 ## Questions
 If you have any questions regarding the development process of this application, or specific questions about contributing, feel free to reach me by email or on Github.
+
+![Profile Pic](https://user-images.githubusercontent.com/84754257/138190954-a5ae2c9d-bc4f-448e-ac43-91d15320cd13.jpg)
+
 * Email 📪 willdarkins@gmail.com
 * Github 🗿 [willdarkins](https://github.com/willdarkins) 
